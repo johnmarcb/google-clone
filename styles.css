@@ -8,14 +8,14 @@
 }
 body {
   margin: 20px;
+  min-width: 372px;
 }
 main{
-  padding-top: 200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  min-width: 272px;
   
 }
 nav {
@@ -69,6 +69,12 @@ button {
 }
 .nav-right button:hover {
   background-color: #494c54;
+}
+main > div{
+height: 100%;
+display: flex;
+width: 100%;
+justify-content: center;
 }
 .logo img {
   object-fit: contain;
