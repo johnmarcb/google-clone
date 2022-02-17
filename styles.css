@@ -4,9 +4,76 @@
   font-size: 14px;
   background-color: #202124;
   color: white;
+  border: solid 1px rgb(136, 0, 255);
 }
 body {
   margin: 20px;
 }
-.left-nav {
+nav {
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: auto;
+  gap: 271px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+svg {
+  fill: white;
+  background-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-right {
+  justify-content: flex-end;
+}
+.nav-right img {
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 50%;
+}
+.nav-right button {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px hidden;
+  border-radius: 50%;
+  padding: 2px 2px;
+}
+.nav-right button:hover {
+  background-color: #494c54;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-width: 272px
+}
+.logo{
+  display: flex;
+  justify-items: flex-end;
+}
+.logo img {
+  object-fit: contain;
+  object-position: center bottom;
+  width: 272px;
+  height: 92px;
 }
