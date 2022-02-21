@@ -3,6 +3,7 @@ body {
   margin: 0;
   color: blue;
   /* overflow: hidden; */
+  background-color: antiquewhite;
 }
 a {
   text-decoration: none;
@@ -31,7 +32,7 @@ li {
 .child-container {
   height: 100vh;
   border: solid green 1px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
 }
 /* -------Navbar---------- */
@@ -58,9 +59,24 @@ header {
   border-radius: 50%;
 }
 
+/* ---------Google Logo-------- */
+.logo {
+  border: solid;
+}
+.logo img {
+  width: 272px;
+  height: 92px;
+}
+
 /* ---------Footer--------- */
 .footer {
   flex-direction: column;
+  background-color: #171717;
+}
+.footer-top {
+  border-bottom: 1px solid grey;
 }
 .footer-bottom {
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
