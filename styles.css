@@ -28,21 +28,24 @@ li {
 }
 svg {
   fill: #bdc1c6;
+  width: 24px;
+  height: 24px;
 }
 .flex {
   display: flex;
 }
-.layout-container {
+.layout-container,
+.child-container {
   height: 100vh;
+}
+.layout-container {
   border: solid blue 2px;
   flex-direction: column;
   box-sizing: border-box;
 }
 .child-container {
-  height: 100vh;
   border: solid green 1px;
   justify-content: center;
-  align-items: flex-end;
 }
 /* -------Navbar---------- */
 .nav {
@@ -57,9 +60,6 @@ svg {
 .nav ul li {
   border: solid;
 }
-.nav svg {
-  width: 24px;
-}
 .nav img {
   width: 32px;
   height: 32px;
@@ -69,13 +69,15 @@ svg {
 /* ---------Google Logo-------- */
 .logo {
   border: solid;
-  margin-top: auto;
+  align-self: flex-end;
+  padding: 10px 0;
 }
 .logo img {
   width: 272px;
   height: 92px;
 }
-
+/* --------Search bar-------- */
+.
 /* ---------Footer--------- */
 .footer {
   margin-top: auto;
