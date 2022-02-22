@@ -5,6 +5,8 @@ html {
   min-width: 400px;
 }
 body {
+  font-size: 15px;
+  overflow-x: hidden;
   display: block;
   color: #bdc1c6;
   background-color: #202124;
@@ -55,7 +57,7 @@ svg {
 }
 .nav img,
 .nav svg {
-  padding: 2px;
+  padding: 4px;
   border-radius: 50%;
 }
 .nav svg:hover,
@@ -64,9 +66,8 @@ svg {
 }
 /* ---------- Main Container ------------ */
 .main {
-  border: solid green 1px;
+  height: 300px;
   justify-content: center;
-  height: 25vh;
 }
 /* ---------Google Logo-------- */
 .logo {
@@ -76,21 +77,20 @@ svg {
 .logo img {
   width: 272px;
   height: 92px;
+  fill: white;
 }
 
 /* --------Search bar-------- */
 .main-item-container {
-  border: cyan solid;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex: 1;
   height: fit-content;
-  gap: 29px;
+  margin: 0 40px;
 }
 .search-container {
-  border: #bdc1c6 1px solid;
-  margin: 0 20px;
+  border: rgba(189, 193, 198, 0.3) 1px solid;
   padding: 8px 10px;
   border-radius: 40px;
   justify-content: center;
@@ -118,7 +118,41 @@ svg {
   height: 34px;
   font-size: 16px;
 }
-
+.button-container {
+  gap: 9px;
+  margin-top: 20px;
+}
+.button-container button {
+  background-color: rgb(48 49 52);
+  border: 1px solid rgb(48 49 52);
+  border-radius: 4px;
+  color: rgb(232 234 237);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.button-container button:hover {
+  box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+  background-color: rgb(48 49 52);
+  border: 1px solid rgb(95 99 104);
+  color: rgb(232 234 237);
+}
+/* ------ Language Selection ------ */
+.language-container {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.language-container span {
+  color: rgb(138 180 248);
+}
 /* ---------Footer--------- */
 .footer {
   margin-top: auto;
@@ -126,7 +160,7 @@ svg {
   background-color: #171717;
 }
 .footer-top {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(189, 193, 198, 0.1);
 }
 .footer-bottom {
   justify-content: space-between;
